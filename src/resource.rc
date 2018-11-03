@@ -10,10 +10,12 @@
  */
 
 #include "resource.h"
+
+#define APSTUDIO_HIDDEN_SYMBOLS
+
 #include <windows.h>
 #include <commctrl.h>
-
-CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "manifest.xml"
+#undef APSTUDIO_HIDDEN_SYMBOLS
 
 IDI_APP_ICON ICON "icon.ico"
 
@@ -33,3 +35,4 @@ BEGIN
     GROUPBOX "&Source file", IDC_STATIC, 5, 5, 285, 35
     EDITTEXT IDC_MAINDLG_SOURCE, 14, 19, 208, 12, ES_AUTOHSCROLL
 END
+

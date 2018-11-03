@@ -11,6 +11,7 @@
 #define MAINDLGSELECT_H
 
 #include <windows.h>
+#include <commdlg.h>
 
 INT_PTR MainDlgSelectClick(HWND hwndDlg);
 
