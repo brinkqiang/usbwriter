@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 PROJECT(usbwriter)
 
 IF (NOT WIN32)
-    MESSAGE(FATAL_ERROR "only windows") 
+    MESSAGE(FATAL_ERROR "platform unsupported") 
 ENDIF (NOT WIN32)
 
 ADD_DEFINITIONS(-DUSE_USBWRITER)
